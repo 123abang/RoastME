@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -28,60 +28,153 @@ export default function JoinUs() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center mb-16">
-          <Button size="lg" className="bg-[#1DA1F2] hover:bg-[#1a94e0] text-white border-0 gap-2">
-            <Twitter className="h-5 w-5" />
-            <a href="https://x.com/GrokBotRoaster">Follow on X</a>
-            
-          </Button>
-          <Button size="lg" className="bg-[#0088cc] hover:bg-[#0077b3] text-white border-0 gap-2">
-            <MessageSquare className="h-5 w-5" />
-            <a href="https://t.me/+0X9PVT3A1yphNDEx">Join TG</a>
-            
-          </Button>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white border-0 gap-2"
+          <a href="https://x.com/GrokBotRoaster" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+            <Button size="lg" className="bg-[#1DA1F2] hover:bg-[#1a94e0] text-white border-0 gap-2 w-full">
+              <Twitter className="h-5 w-5" />
+              Follow on X
+            </Button>
+          </a>
+          <a
+            href="https://t.me/+0X9PVT3A1yphNDEx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full md:w-auto"
           >
-            <Wallet className="h-5 w-5" />
-            Buy Presale Shares
-          </Button>
+            <Button size="lg" className="bg-[#0088cc] hover:bg-[#0077b3] text-white border-0 gap-2 w-full">
+              <MessageSquare className="h-5 w-5" />
+              Join TG
+            </Button>
+          </a>
+          <a
+            href="https://www.pinksale.finance/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full md:w-auto"
+          >
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 text-white border-0 gap-2 w-full"
+            >
+              <Wallet className="h-5 w-5" />
+              Buy Presale Shares
+            </Button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <Card key={i} className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
-              <CardContent className="p-0">
-                <div className="p-4 border-b border-purple-500/30">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
-                    <div className="text-white font-bold">@user{i * 123}</div>
-                  </div>
-                  <p className="text-gray-300">
-                    {i % 2 === 0 ? (
-                      <>
-                        Just got roasted by <span className="text-purple-400">@grokbotroaster</span> and I'm dying! 🤣
-                        This AI doesn't hold back! $roastme
-                      </>
-                    ) : (
-                      <>
-                        Holy sh*t <span className="text-purple-400">@grokbotroaster</span> just ended my whole career
-                        with that roast! Still buying more $roastme tho 🚀
-                      </>
-                    )}
-                  </p>
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@crypto_chad420</div>
                 </div>
-                <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
-                  <p className="text-sm text-gray-400">
-                    {i % 3 === 0
-                      ? "This community is wild! Best decision I made was joining early."
-                      : i % 3 === 1
-                        ? "Getting roasted daily and making money? Sign me up!"
-                        : "The memes here are next level. We're definitely going viral."}
-                  </p>
+                <p className="text-gray-300">
+                  Just got roasted by <span className="text-purple-400">@grokbotroaster</span> and I'm dying! 🤣 This AI
+                  doesn't hold back! $roastme
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">This community is wild! Best decision I made was joining early.</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@nft_queen</div>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+                <p className="text-gray-300">
+                  <span className="text-purple-400">@grokbotroaster</span> just called me a "walking NFT that nobody
+                  would right-click save" and I can't even be mad 💀 $roastme
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">Getting roasted daily and making money? Sign me up!</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@defi_degen</div>
+                </div>
+                <p className="text-gray-300">
+                  <span className="text-purple-400">@grokbotroaster</span> said my portfolio is more rekt than my
+                  hairline. Brutal but accurate 😂 $roastme is the only green I've seen in months!
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">The roasts here are next level. We're definitely going viral.</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@meme_lord</div>
+                </div>
+                <p className="text-gray-300">
+                  <span className="text-purple-400">@grokbotroaster</span> said my memes are so bad even MySpace Tom
+                  would unfriend me. I'm both offended and impressed 🔥 $roastme
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">
+                  First time I've been roasted by AI and it hurts so good. Bullish!
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@eth_maxi</div>
+                </div>
+                <p className="text-gray-300">
+                  <span className="text-purple-400">@grokbotroaster</span> just compared my trading strategy to a monkey
+                  throwing darts. The monkey would've outperformed me tho 🙈 $roastme
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">
+                  Watching people get destroyed by AI all day is my new favorite hobby.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gray-900/60 border-purple-500/30 backdrop-blur-sm overflow-hidden">
+            <CardContent className="p-0">
+              <div className="p-4 border-b border-purple-500/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                  <div className="text-white font-bold">@sol_surfer</div>
+                </div>
+                <p className="text-gray-300">
+                  <span className="text-purple-400">@grokbotroaster</span> said my brain is smoother than my pickup
+                  lines. Can't argue with that AI wisdom 🧠 $roastme is the future of comedy!
+                </p>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30">
+                <p className="text-sm text-gray-400">
+                  This is what Web3 was made for - getting roasted and making bank simultaneously.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

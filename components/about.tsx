@@ -66,9 +66,9 @@ export default function About() {
               </CardDescription>
               <div className="text-gray-300 text-base">
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Soft cap: $50,000 - Minimum to launch the project</li>
+                  <li>Soft cap: $10,000 - Minimum to launch the project</li>
                   <li>Hard cap: $100,000 - Maximum funding for optimal launch</li>
-                  <li>25% of funds ($25,000) allocated to liquidity pool</li>
+                  <li>51% of funds  allocated to liquidity pool</li>
                   <li>48-hour kickoff blitz to teach community engagement</li>
                   <li>Meme and influencer roasting campaigns</li>
                 </ul>
